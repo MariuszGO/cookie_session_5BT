@@ -7,7 +7,7 @@ $naz = $_GET['nazwisko'];
 $cookie_name = "dane";
 //$cookie_value = $im . " " .  $naz;
 
-
+//Nowe Dane
 
 ?>
 <html>
