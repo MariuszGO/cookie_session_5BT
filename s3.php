@@ -10,10 +10,10 @@ session_start();
 
 if(isset($_SESSION["login"])){
 
-echo "Witaj " . $_SESSION["login"] . " tutaj też jesteś rozpoznany S1" ;
+echo "Witaj " . $_SESSION["login"] . " tutaj też jesteś rozpoznany S3" ;
 }
 else{
-echo "Nie jestes zalogowany nie zobaczysz storny S1";
+echo "Nie jestes zalogowany nie zobaczysz storny S3";
 
 }
 

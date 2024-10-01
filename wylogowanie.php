@@ -4,18 +4,21 @@
 <a href="s2.php"> Podstrona2  </a>
 <a href="s3.php"> Podstrona2  </a>
 <a href="wylogowanie.php"> wylogowanie</a>
-<?php
-session_start();
 
+<?php
+
+session_start();
 
 if(isset($_SESSION["login"])){
 
-echo "Witaj " . $_SESSION["login"] . " tutaj też jesteś rozpoznany S1" ;
-}
-else{
-echo "Nie jestes zalogowany nie zobaczysz storny S1";
+    echo "Witaj " . $_SESSION["login"] . " na stronie wylogowanie"  ;
+    }
+    else{
+    echo "Nie jestes zalogowany nie zobaczysz storny wylogowamie" ;
+    
+    }
 
-}
+session_destroy();
 
-
+echo "Wylogowano."
 ?>
