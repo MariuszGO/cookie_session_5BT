@@ -1,8 +1,8 @@
 <br>
 <a href="logowanie.php"> Logowanie  </a>
-<a href="s1.php"> Podstrona  </a>
+<a href="s1.php"> Podstrona1  </a>
 <a href="s2.php"> Podstrona2  </a>
-<a href="s3.php"> Podstrona2  </a>
+<a href="s3.php"> Podstrona3  </a>
 <a href="wylogowanie.php"> wylogowanie</a>
 
 <?php
