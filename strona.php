@@ -11,5 +11,7 @@ session_start();
   //echo " został wylogowany.";
  // session_destroy();
 ?>
+
+<a href="s1.php"> Podstrona</a>
 </BODY>
 </HTML>
