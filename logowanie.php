@@ -1,6 +1,10 @@
 <?php
-$login=$_POST["login"];
-$pass=$_POST["pass"];
+
+if(isset($_POST["login"]) && isset($_POST["pass"])){
+  $login=$_POST["login"];
+  $pass=$_POST["pass"];  
+}
+
 
 if (isset($login) && isset($pass)){
   if ($login == "admin" && $pass == "admin"){

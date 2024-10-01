@@ -3,7 +3,7 @@ session_start();
 ?>
 <HTML>
 <HEAD>
-  <TITLE>Wylogowanie</TITLE>
+  <TITLE>Zalogowany</TITLE>
 </HEAD>
 <BODY>
 <?php
