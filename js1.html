@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <p id="miejsce"></p>
+    <p id="nazwa"></p>
+    <button id="przycisk">Powitaj</button>
+    <button  onclick='document.getElementById("nazwa").innerHTML = " "'>wyczysc</button>
+    <button type="button"  onclick="moja_funkcja()">Zmień</button>
+<script>
+document.getElementById('miejsce').innerHTML = "To jest mój pierwszy skrypt";
+		przycisk.addEventListener("click", function(){
+        document.getElementById('nazwa').innerHTML='<h1>Witaj świecie!</h1>';
+        });
+
+function moja_funkcja(){
+    document.getElementById("nazwa").innerHTML = "To jest zmieniony tekst";
+ }
+</script>    
+    
+</body>
+</html>
