@@ -10,13 +10,17 @@
     <p id="miejsce"></p>
     <p id="nazwa"></p>
     <p id="suma"></p>
+    <p id="zm1"></p>
+    <p id="zm2"></p>
     <button id="przycisk">Powitaj</button>
     <button  onclick='document.getElementById("nazwa").innerHTML = " "'>wyczysc</button>
     <button type="button"  onclick="moja_funkcja()">Zmień</button>
     <button type="button"  onclick='alert("To jest okienko z naszą wiadomością")'>Okienko</button>
     <button type="button"  onclick="moja_funkcja1()">Funkcja z pliku JS</button>
     <button type="button"  onclick="suma()">Oblicz sumę</button>
-    
+    <button type="button"  onclick="f1()">var</button>
+    <button type="button"  onclick="f2()">let</button>
+
 <script>
 document.getElementById('miejsce').innerHTML = "To jest mój pierwszy skrypt";
 		przycisk.addEventListener("click", function(){
@@ -25,7 +29,38 @@ document.getElementById('miejsce').innerHTML = "To jest mój pierwszy skrypt";
 
 function moja_funkcja(){
     document.getElementById("nazwa").innerHTML = "To jest zmieniony tekst";
+    document.getElementById("sf").innerHTML =b; 
  }
+ function srednia(a,b,c){
+
+let wynik
+
+wynik = (a+b+c) / 3
+
+return wynik
+}
+
+function f1(){
+let a = parseInt(prompt("Podaj a:"));
+let b = parseInt(prompt("Podaj b:"));
+let c = parseInt(prompt("Podaj c:"));
+
+
+document.getElementById("zm1").innerHTML = "Srednia liczba " + a +" "+b+ " "+" "+c +" Wynosi "+ srednia(a,b,c);
+
+}
+
+function f2(){
+let zmienna = "TEKST2 let";
+
+console.log("to jest nasza zmienna:" + zmienna);
+}
+
+
+
+
+
+
 </script>    
     
 </body>
