@@ -1,0 +1,45 @@
+
+body{
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "header header header"
+    "p1 s l"
+    "p2 s l"
+    "stopka stopka stopka"
+    ;
+    grid-template-columns: 1fr 1fr 1f;
+    grid-auto-rows: auto;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+.p1{
+    grid-area: p1;
+    background-color: beige;
+
+}
+
+
+.p2{
+    grid-area: p2;
+    background-color: greenyellow;
+
+}
+
+article{
+    grid-area: s;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: l;
+    background-color: crimson;
+}
+
+footer{
+    grid-area: stopka;
+    background-color: darkgoldenrod;
+}
