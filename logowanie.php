@@ -9,7 +9,8 @@ if(isset($_POST["login"]) && isset($_POST["pass"])){
 if (isset($login) && isset($pass)){
   if ($login == "admin" && $pass == "admin"){
     session_start();
-    $_SESSION["login"] = $login; 
+    $_SESSION["login"] = $login;
+    $_SESSION['nr'] = 12; 
     header("Location: strona.php?");
     exit();
   } else
