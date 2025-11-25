@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Formularz cookie</title>
+
+</head>
+<body>
 <?php
 
 $im = @$_GET['imie'];
@@ -10,11 +20,6 @@ $cookie_name = "dane";
 
 //Nowe Dane
 
-?>
-<html>
-<body>
-
-<?php
 if(!isset($_COOKIE[$cookie_name])) {
     $cookie_value= 1;
     setcookie($cookie_name, $cookie_value, time() + 5, "/");

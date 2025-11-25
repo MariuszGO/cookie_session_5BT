@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Formularz cookie</title>
+
+</head>
+<body>
 <br>
 <a href="logowanie.php"> Logowanie  </a>
 <a href="s1.php"> Podstrona  </a>
@@ -19,3 +29,5 @@ echo "Nie jestes zalogowany nie zobaczysz storny S3";
 
 
 ?>
+</body>
+</html>

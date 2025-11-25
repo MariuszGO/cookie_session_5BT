@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Formularz cookie</title>
+
+</head>
+<body>
 <?php
 
 if(isset($_POST["login"]) && isset($_POST["pass"])){
@@ -18,11 +28,7 @@ if (isset($login) && isset($pass)){
 } else
   $error = false;
 ?>
-<HTML>
-<HEAD>
-  <TITLE>Logowanie</TITLE>
-</HEAD>
-<BODY>
+
   <B>Podaj login i&nbsp;hasło</B>
   <FORM method="POST" action="logowanie.php">
     Login: <INPUT type="text" name="login"><BR>

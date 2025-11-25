@@ -1,12 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Formularz cookie</title>
+
+</head>
+<body>
 <?php
 session_start();
-?>
-<HTML>
-<HEAD>
-  <TITLE>Zalogowany</TITLE>
-</HEAD>
-<BODY>
-<?php
 
 if(isset($_SESSION["login"])){
 echo "Użytkownik " . $_SESSION["login"] . " jest zalogowany i masz numer " . $_SESSION["nr"] ;
