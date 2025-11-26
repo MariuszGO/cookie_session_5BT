@@ -48,19 +48,21 @@ if (isset($login) && isset($pass))
             } 
             else
             {
-              $error = "<B>Błędny login lub hasło!</B><BR>";
-            
+            $error = "<B>Błędny login lub hasło!</B><BR>";
+           // echo $error;
             }
   } 
   else $error = false;
 ?>
 
   <B>Podaj login i&nbsp;hasło</B>
-  <FORM method="POST" action="logowanie.php">
-    Login: <INPUT type="text" name="login"><BR>
-    Hasło: <INPUT type="password" name="pass"><BR>
-    <INPUT type="submit" value="Zaloguj się">
-  </FORM>
+  <form method="POST" action="logowanie.php">
+    <label for="login">Login: </label>
+    <input type="text" id="login" name="login"><br>
+    <label for="pass">Hasło: </label>
+    <input type="password" name="pass"><br>
+    <input type="submit" value="Zaloguj się">
+</form>
   <?php echo $error; ?>
     </main> 
     <footer>
