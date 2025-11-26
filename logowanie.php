@@ -21,6 +21,7 @@
                 <li> <a href="s1.php"> Podstrona1  </a> </li>
                 <li> <a href="s2.php"> Podstrona2  </a> </li>
                 <li> <a href="s3.php"> Podstrona3  </a> </li>
+                <li> <a href="formularz_cookie.html"> Przykład cookie </a> </li>
                 <li> <a href="wylogowanie.php"> Wylogowanie  </a> </li>
             </ul>
     </nav>
@@ -35,17 +36,23 @@ if(isset($_POST["login"]) && isset($_POST["pass"])){
 }
 
 
-if (isset($login) && isset($pass)){
-  if ($login == "admin" && $pass == "admin"){
-    session_start();
-    $_SESSION["login"] = $login;
-    $_SESSION['nr'] = 12; 
-    header("Location: strona.php?");
-    exit();
-  } else
-    $error = "<B>Błędny login lub hasło!</B><BR>";
-} else
-  $error = false;
+if (isset($login) && isset($pass))
+  {
+            if ($login == "admin" && $pass == "admin")
+              {
+                session_start();
+                $_SESSION["login"] = $login;
+                $_SESSION['nr'] = 12; 
+                header("Location: strona.php?");
+                exit();
+            } 
+            else
+            {
+              $error = "<B>Błędny login lub hasło!</B><BR>";
+            
+            }
+  } 
+  else $error = false;
 ?>
 
   <B>Podaj login i&nbsp;hasło</B>
@@ -54,6 +61,7 @@ if (isset($login) && isset($pass)){
     Hasło: <INPUT type="password" name="pass"><BR>
     <INPUT type="submit" value="Zaloguj się">
   </FORM>
+  <?php echo $error; ?>
     </main> 
     <footer>
         <p> &copy; 2025 dla KL5 </p>  

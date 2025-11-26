@@ -21,6 +21,7 @@
                 <li> <a href="s1.php"> Podstrona1  </a> </li>
                 <li> <a href="s2.php"> Podstrona2  </a> </li>
                 <li> <a href="s3.php"> Podstrona3  </a> </li>
+                <li> <a href="formularz_cookie.html"> Przykład cookie </a> </li>
                 <li> <a href="wylogowanie.php"> Wylogowanie  </a> </li>
             </ul>
     </nav>

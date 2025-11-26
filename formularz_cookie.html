@@ -8,21 +8,38 @@
 
 </head>
 <body>
+    <header>
+        <h1> Strona o sesjach </h1>
+    </header>
 
-<form action="cookie.php" method="get">
-    <label for="imie">Imię:</label>
-    
-             
-<input class="form-control " type="text" id="imie" name="imie" pattern="^[A-Za-z]{1,10}$" placeholder="MAX 10 znaków" required>
+    <nav>
+        <ul>
+                <li> <a href="logowanie.php"> Logowanie  </a> </li>
+                <li> <a href="s1.php"> Podstrona1  </a> </li>
+                <li> <a href="s2.php"> Podstrona2  </a> </li>
+                <li> <a href="s3.php"> Podstrona3  </a> </li>
+                <li> <a href="formularz_cookie.html"> Przykład cookie </a> </li>
+                <li> <a href="wylogowanie.php"> Wylogowanie  </a> </li>
+            </ul>
+    </nav>
+    <main>
+    <h2> Formularz do ustawiania ciasteczek </h2>
+    <h4> Sesje tu nie działają ponieważ plik jest HTML</h4>
 
-<label for="nazwisko">Nazwisko:</label>
+      <form action="cookie.php" method="get">
+        <label for="imie">Imię:</label>     
+        <input class="form-control " type="text" id="imie" name="imie" pattern="^[A-Za-z]{1,10}$" placeholder="MAX 10 znaków" required><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko" pattern="^[A-Za-z]{1,10}$" title="MAX 10 znaków (Tylko litery)"><br>
+        <label for="nr">NR:</label>
+        <input type="number" name="nr" min="1" max="199" title="Od 1 do 199 "><br>
+        <input type="submit" class="btn btn-success" value="wyślij">
+       </form>
 
-<input type="text" id="nazwisko" name="nazwisko" pattern="^[A-Za-z]{1,10}$" title="MAX 10 znaków (Tylko litery)">
-<label for="nr">NR:</label>
-<input type="number" name="nr" min="1" max="199" title="Od 1 do 199 ">
-<input type="submit" class="btn btn-success" value="wyślij">
-</form>
-
+</main>
+    <footer>
+        <p> &copy; 2025 dla KL5 </p>    
+    </footer>   
     
 </body>
 </html>

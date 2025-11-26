@@ -66,7 +66,7 @@ a {
 li{
     display: inline;
     margin-right: 15px;
-    
+
 }
 
 a:hover {
@@ -95,3 +95,6 @@ a:hover {
     
 }
 
+.nowa {
+    color: #e40a0a;
+}
